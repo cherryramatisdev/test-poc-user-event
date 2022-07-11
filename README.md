@@ -1,7 +1,7 @@
 # test-poc-user-event
 
 ## test running
-![image](https://user-images.githubusercontent.com/86631177/178342822-ccb74008-dd70-43b8-ba66-dfbc2aadc2e9.png)
+![image](https://user-images.githubusercontent.com/86631177/178358125-766391dd-de74-49d5-8834-006b9bab3a1b.png)
 
 
 ## storybook running

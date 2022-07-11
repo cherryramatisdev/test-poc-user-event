@@ -5,11 +5,12 @@ import { Button } from './Button'
 import userEvent from '@testing-library/user-event';
 
 describe('<Button />', () => {
-  it('should render button', () => {
+  it('should render button', async () => {
     const mockonClick = jest.fn();
     render(<Button onClick={mockonClick}>teste</Button>)
 
-    userEvent.click(screen.getByText(/teste/i));
+    await userEvent.click(screen.getByText(/teste/i));
+
     expect(mockonClick).toHaveBeenCalledTimes(1);
     expect(
       screen.getByText(/teste/i)).toHaveStyle({ 'border-radius': '30px' });

@@ -11,5 +11,7 @@ describe('<Button />', () => {
 
     userEvent.click(screen.getByText(/teste/i));
     expect(mockonClick).toHaveBeenCalledTimes(1);
+    expect(
+      screen.getByText(/teste/i)).toHaveStyle({ 'border-radius': '30px' });
   })
 })

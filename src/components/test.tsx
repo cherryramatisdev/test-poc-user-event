@@ -7,7 +7,7 @@ import userEvent from '@testing-library/user-event';
 describe('<Button />', () => {
   it('should render button', () => {
     const mockonClick = jest.fn();
-    const { container } = render(<Button onClick={mockonClick}>teste</Button>)
+    render(<Button onClick={mockonClick}>teste</Button>)
 
     userEvent.click(screen.getByText(/teste/i));
     expect(mockonClick).toHaveBeenCalledTimes(1);
